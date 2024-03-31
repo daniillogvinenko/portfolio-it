@@ -1,0 +1,81 @@
+.AboutHeroSection {
+    padding: 200px 0;
+    border-bottom: 1px solid var(--main-color);
+
+    @media screen and (max-width: 380px) {
+        padding: 100px 0;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 380px) {
+        display: block;
+    }
+}
+
+.left {
+    font-size: 24px;
+    font-weight: 100;
+
+    .name {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 16px;
+    }
+}
+
+.right {
+    min-width: 280px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    background: url('../../../assets/avatar/avatar.png') center/cover;
+
+    @media screen and (max-width: 380px) {
+        min-width: 164px;
+        width: 164px;
+        height: 164px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 50px;
+    }
+}
+
+.bold {
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 112px;
+
+    @media screen and (max-width: 380px) {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.subtitle {
+    margin-bottom: 50px;
+}
+
+.btn1 {
+    @media screen and (max-width: 380px) {
+        display: none;
+    }
+}
+
+.btn2 {
+    display: none;
+    width: 100%;
+
+    @media screen and (max-width: 380px) {
+        display: block;
+    }
+}

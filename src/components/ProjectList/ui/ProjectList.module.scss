@@ -1,0 +1,77 @@
+.ProjectList {
+    margin-top: 180px;
+}
+
+.separation {
+    height: 20px;
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 380px) {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+    backdrop-filter: blur(2px);
+}
+
+.text {
+    font-size: 75px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+    @media screen and (max-width: 380px) {
+        font-size: 40px;
+    }
+}
+
+.bg1 {
+    height: 90vh;
+    background: url('../../../assets/images/mainPageProjectBgs/bg1.png') fixed center/cover;
+
+
+}
+
+.bg2 {
+    height: 90vh;
+    background: url('../../../assets/images/mainPageProjectBgs/bg2.png') fixed center/cover;
+
+
+}
+
+.bg3 {
+    height: 90vh;
+    background: url('../../../assets/images/mainPageProjectBgs/bg3.png') fixed center/cover;
+
+
+}
+
+.bg4 {
+    height: 90vh;
+    background: url('../../../assets/images/mainPageProjectBgs/bg4.png') fixed center/cover;
+
+
+}
+
+.bg5 {
+    height: 90vh;
+    background: url('../../../assets/images/mainPageProjectBgs/bg5.png') fixed center/cover;
+
+
+}

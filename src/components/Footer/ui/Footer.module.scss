@@ -1,0 +1,51 @@
+.Footer {
+    padding: 140px 0;
+
+    @media screen and (max-width: 380px) {
+        padding: 100px 0;
+    }
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 24px;
+    align-items: end;
+
+    @media screen and (max-width: 380px) {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 380px) {
+        font-size: 40px;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 80px;
+    color: var(--accent-color);
+
+    @media screen and (max-width: 380px) {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.right {
+    line-height: 150%;
+
+    @media screen and (max-width: 380px) {
+        line-height: 200%;
+    }
+}

@@ -1,0 +1,26 @@
+.Header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--main-color);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    @media screen and (max-width: 380px) {
+        display: none;
+    }
+}

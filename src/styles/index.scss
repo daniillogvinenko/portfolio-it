@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './reset.scss';
+@import './variables/global.scss';
+
+body {
+    font-family: 'Code Next-Trial';
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 380px) {
+        min-width: 335px;
+        width: 335px;
+    }
+}

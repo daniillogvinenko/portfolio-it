@@ -1,0 +1,75 @@
+.Skills {
+    padding-top: 100px;
+    font-weight: 100;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 380px) {
+        font-size: 40px;
+    }
+
+    margin-bottom: 50px;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 380px) {
+        display: none;
+    }
+}
+
+table {
+    display: block;
+}
+
+tbody {
+    display: block;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        font-size: 20px;
+        border-collapse: collapse;
+        outline: 1px solid var(--main-color);
+        width: 50%;
+        padding: 20px 70px;
+
+        @media screen and (max-width: 380px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.tableDesktop {
+    display: block;
+
+    @media screen and (max-width: 380px) {
+        display: none;
+    }
+}
+
+.tableMobile {
+    display: none;
+
+    @media screen and (max-width: 380px) {
+        display: block;
+
+        div {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
