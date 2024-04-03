@@ -6,43 +6,130 @@ import img2 from "../../../assets/images/projectPage5/2.png";
 import img3 from "../../../assets/images/projectPage5/3.png";
 import img4 from "../../../assets/images/projectPage5/4.png";
 import img5 from "../../../assets/images/projectPage5/5.png";
-import { Footer } from "../../../components/Footer";
+import img6 from "../../../assets/images/projectPage5/6.png";
+import { motion } from "framer-motion";
 
 export const ProjectPage5 = () => {
+    const animationVariants = {
+        initial: {
+            opacity: 0,
+            y: 100,
+        },
+
+        animate: {
+            opacity: 1,
+            y: 0,
+        },
+    };
+
+    const imageAnimationVariants = {
+        initial: {
+            opacity: 0,
+        },
+
+        animate: {
+            opacity: 1,
+        },
+    };
+
     return (
-        <div>
+        <div className={classes.ProjectPage5}>
             <Header />
             <div className="container">
                 <div className={classes.title}>PProjects</div>
-                <div className={classes.tagFlex}>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.tagFlex}
+                >
                     <Tag>Figma</Tag>
                     <Tag>React</Tag>
                     <Tag>TypeScript</Tag>
                     <Tag>RTK</Tag>
                     <Tag>RTK Query</Tag>
                     <Tag>Webpack</Tag>
-                </div>
-                <p>
+                </motion.div>
+                <motion.p
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    transition={{ delay: 0.5 }}
+                >
                     Разработка приложения, позволяющего начинающим разработчикам искать идеи для своих проектов
                     <br />
                     <br /> Год реализации проекта - 2023
-                </p>
+                </motion.p>
                 <div className={classes.images}>
-                    <div className={classes.left}>
-                        <img src={img1} alt="" />
-                        <img src={img3} alt="" />
-                    </div>
-                    <div className={classes.mid}>
-                        <img src={img2} alt="" />
-                    </div>
-                    <div className={classes.right}>
-                        <img src={img4} alt="" />
-                        <img src={img5} alt="" />
+                    <p>Прототипы</p>
+                    <motion.img
+                        transition={{ delay: 0.3 }}
+                        viewport={{ once: true }}
+                        variants={imageAnimationVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        src={img6}
+                        alt=""
+                    />
+                    <p>Экраны приложения</p>
+                    <div className={classes.imagesFlex}>
+                        <div className={classes.left}>
+                            <motion.img
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                                variants={imageAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                src={img1}
+                                alt=""
+                            />
+                            <motion.img
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                                variants={imageAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                src={img3}
+                                alt=""
+                            />
+                        </div>
+                        <div className={classes.mid}>
+                            <motion.img
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                                variants={imageAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                src={img2}
+                                alt=""
+                            />
+                        </div>
+                        <div className={classes.right}>
+                            <motion.img
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                                variants={imageAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                src={img4}
+                                alt=""
+                            />
+                            <motion.img
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                                variants={imageAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                src={img5}
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className={classes.separator} />
-            <Footer />
         </div>
     );
 };

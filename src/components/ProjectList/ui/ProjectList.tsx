@@ -1,12 +1,33 @@
 import { Link } from "react-router-dom";
 import classes from "./ProjectList.module.scss";
+import { motion } from "framer-motion";
 
 const Separator = () => <div className={classes.separation}></div>;
 
 export const ProjectList = () => {
+    const animationVariants = {
+        initial: {
+            opacity: 0,
+            y: 100,
+        },
+
+        animate: {
+            opacity: 1,
+            y: 0,
+        },
+    };
+
     return (
         <div className={classes.ProjectList}>
-            <div className={classes.title}>Проекты</div>
+            <motion.div
+                viewport={{ once: true }}
+                variants={animationVariants}
+                initial="initial"
+                whileInView="animate"
+                className={classes.title}
+            >
+                Проекты
+            </motion.div>
             <Link to="/project/1">
                 <div className={classes.bg1}>
                     <div className={classes.textContainer}>

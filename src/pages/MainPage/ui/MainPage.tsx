@@ -1,4 +1,3 @@
-import { Footer } from "../../../components/Footer";
 import { Header } from "../../../components/Header/ui/Header";
 import { HeroSection } from "../../../components/HeroSection";
 import { ProjectList } from "../../../components/ProjectList";
@@ -12,7 +11,6 @@ export const MainPage = () => {
             <HeroSection />
             <Skills />
             <ProjectList />
-            <Footer />
         </div>
     );
 };

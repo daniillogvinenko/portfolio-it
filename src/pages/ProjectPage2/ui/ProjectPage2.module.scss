@@ -1,3 +1,22 @@
+.ProjectPage2 {
+    p {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 160%;
+        width: 70%;
+
+        @media screen and (max-width: 380px) {
+            width: 100%;
+        }
+    }
+
+    img {
+        border: 1px solid var(--main-color);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 .title {
     font-weight: 700;
     font-size: 64px;
@@ -64,11 +83,7 @@
     }
 }
 
-img {
-    border: 1px solid var(--main-color);
-    width: 100%;
-    margin-bottom: 20px;
-}
+
 
 .separator {
     border-bottom: 1px solid var(--main-color);

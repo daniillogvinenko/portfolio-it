@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./Footer.module.scss";
 import { InterFont } from "../../InterFont/InterFont";
+import arrowIcon from "../../../assets/icons/linkArrow.png";
 
 export const Footer = () => {
     return (
@@ -11,10 +12,16 @@ export const Footer = () => {
                         <div className={classes.title}>Контакты</div>
                         <div className={classes.links}>
                             <Link target="_blank" to="https://github.com/">
-                                GitHub
+                                <div className={classes.linkFlex}>
+                                    <span>GitHub</span>
+                                    <img src={arrowIcon} alt="" />
+                                </div>
                             </Link>
                             <Link target="_blank" to="https://web.telegram.org/">
-                                Telegram
+                                <div className={classes.linkFlex}>
+                                    <span>Telegram</span>
+                                    <img src={arrowIcon} alt="" />
+                                </div>
                             </Link>
                         </div>
                     </div>

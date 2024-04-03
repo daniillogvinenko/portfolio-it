@@ -9,50 +9,195 @@ import img5 from "../../../assets/images/projectPage1/5.png";
 import img6 from "../../../assets/images/projectPage1/6.png";
 import img7 from "../../../assets/images/projectPage1/7.png";
 import img8 from "../../../assets/images/projectPage1/8.png";
-import { Footer } from "../../../components/Footer";
+import { motion } from "framer-motion";
 
 export const ProjectPage1 = () => {
+    const animationVariants = {
+        initial: {
+            opacity: 0,
+            y: 100,
+        },
+
+        animate: {
+            opacity: 1,
+            y: 0,
+        },
+    };
+
+    const imageAnimationVariants = {
+        initial: {
+            opacity: 0,
+        },
+
+        animate: {
+            opacity: 1,
+        },
+    };
+
     return (
-        <div>
+        <div className={classes.ProjectPage1}>
             <Header />
             <div className="container">
                 <div className={classes.title}>Кибержесть</div>
-                <div className={classes.tagFlex}>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.tagFlex}
+                >
                     <Tag>Figma</Tag>
                     <Tag>Adobe Illustrator</Tag>
-                </div>
-                <p>
+                </motion.div>
+                <motion.p
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    transition={{ delay: 0.5 }}
+                >
                     Разработка дизайна интернет-магазина для компании, занимающейся сборкой ПК и производством корпусов
                     столов <br />
                     <br /> Сайт предоставляет пользователям возможность покупки как стандартных компьютеров, так и
                     возможность создать свою сборку с нуля.
                     <br />
                     <br /> Год реализации проекта - 2023
-                </p>
-                <div className={classes.title}>Команда</div>
-                <div className={classes.name}>Дарья Хворостян</div>
-                <div className={classes.name}>Соболев Максим</div>
-                <div className={classes.name}>Горохов Олег</div>
-                <div className={classes.name}>Полуянова Елизавета</div>
-                <div className={classes.name}>Габараев Арсен</div>
-                <div className={classes.name}>Михалева Ася</div>
+                </motion.p>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.title}
+                >
+                    Команда
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.name}
+                >
+                    Дарья Хворостян
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.name}
+                >
+                    Соболев Максим
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.name}
+                >
+                    Горохов Олег
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.name}
+                >
+                    Полуянова Елизавета
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.name}
+                >
+                    Габараев Арсен
+                </motion.div>
+                <motion.div
+                    viewport={{ once: true }}
+                    variants={animationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    className={classes.name}
+                >
+                    Михалева Ася
+                </motion.div>
                 <div className={classes.images}>
                     <div className={classes.left}>
-                        <img src={img1} alt="" />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img1}
+                            alt=""
+                        />
                         <img src={img2} alt="" />
                     </div>
                     <div className={classes.right}>
-                        <img src={img3} alt="" />
-                        <img src={img4} alt="" />
-                        <img src={img5} alt="" />
-                        <img src={img6} alt="" />
-                        <img src={img7} alt="" />
-                        <img src={img8} alt="" />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img3}
+                            alt=""
+                        />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img4}
+                            alt=""
+                        />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img5}
+                            alt=""
+                        />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img6}
+                            alt=""
+                        />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img7}
+                            alt=""
+                        />
+                        <motion.img
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                            variants={imageAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            src={img8}
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
             <div className={classes.separator} />
-            <Footer />
         </div>
     );
 };

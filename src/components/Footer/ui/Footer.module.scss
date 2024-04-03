@@ -5,6 +5,25 @@
         padding: 100px 0;
     }
 
+
+    .linkFlex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        @media screen and (max-width: 380px) {
+
+            gap: 7px;
+
+            img {
+                transform: scale(0.9);
+            }
+        }
+    }
 }
 
 .flex {

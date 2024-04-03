@@ -7,6 +7,7 @@ import { ProjectPage2 } from "./pages/ProjectPage2";
 import { ProjectPage3 } from "./pages/ProjectPage3";
 import { ProjectPage4 } from "./pages/ProjectPage4";
 import { ProjectPage5 } from "./pages/ProjectPage5";
+import { Footer } from "./components/Footer";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/project/4" element={<ProjectPage4 />} />
                 <Route path="/project/5" element={<ProjectPage5 />} />
             </Routes>
+            <Footer />
         </>
     );
 }
