@@ -9,10 +9,12 @@ import { ProjectPage4 } from "./pages/ProjectPage4";
 import { ProjectPage5 } from "./pages/ProjectPage5";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header/ui/Header";
+import { Modal } from "./components/Modal";
 
 function App() {
     return (
         <>
+            <Modal />
             <Header />
             <Routes>
                 <Route path="/" element={<MainPage />} />
