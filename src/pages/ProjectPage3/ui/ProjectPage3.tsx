@@ -1,4 +1,3 @@
-import { Header } from "../../../components/Header/ui/Header";
 import { Tag } from "../../../components/Tag";
 import classes from "./ProjectPage3.module.scss";
 import img1 from "../../../assets/images/projectPage3/1.png";
@@ -34,7 +33,6 @@ export const ProjectPage3 = () => {
 
     return (
         <div className={classes.ProjectPage3}>
-            <Header />
             <div className="container">
                 <div className={classes.title}>SoundWave</div>
                 <motion.div

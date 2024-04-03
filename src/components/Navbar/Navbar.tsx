@@ -2,6 +2,8 @@ import { useState } from "react";
 import classes from "./Navbar.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import closeIcon from "../../assets/icons/close.png";
+import openIcon from "../../assets/icons/burger.png";
 
 const navLinks: { title: string; href: string }[] = [
     {
@@ -78,21 +80,7 @@ export const Navbar = () => {
     return (
         <header>
             <div onClick={toggleMenu} className={classes.openBtn}>
-                {/* <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                </svg> */}
-                Меню
+                <img src={openIcon} alt="" />
             </div>
             <AnimatePresence>
                 {open && (
@@ -107,7 +95,9 @@ export const Navbar = () => {
                             <div className="container">
                                 <div className={classes.header}>
                                     <div></div>
-                                    <div onClick={toggleMenu}>Закрыть</div>
+                                    <div onClick={toggleMenu}>
+                                        <img src={closeIcon} alt="" />
+                                    </div>
                                 </div>
                             </div>
                             <motion.div

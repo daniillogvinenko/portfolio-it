@@ -8,10 +8,12 @@ import { ProjectPage3 } from "./pages/ProjectPage3";
 import { ProjectPage4 } from "./pages/ProjectPage4";
 import { ProjectPage5 } from "./pages/ProjectPage5";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header/ui/Header";
 
 function App() {
     return (
         <>
+            <Header />
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/about" element={<AboutPage />} />
