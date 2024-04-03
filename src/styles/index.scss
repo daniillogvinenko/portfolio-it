@@ -9,6 +9,18 @@ body {
     font-family: 'Code Next-Trial';
     background-color: var(--bg-color);
     color: var(--main-color);
+
+    @font-face {
+        font-family: 'Code Next-Trial';
+        font-weight: 100;
+        src: url('../assets/fonts/CodeNext-Trial-Thin.otf');
+    }
+
+    @font-face {
+        font-family: 'Code Next-Trial';
+        font-weight: 700;
+        src: url('../assets/fonts/CodeNext-Trial-Bold.otf');
+    }
 }
 
 .container {
