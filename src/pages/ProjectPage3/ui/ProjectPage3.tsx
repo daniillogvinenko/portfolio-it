@@ -7,6 +7,7 @@ import img4 from "../../../assets/images/projectPage3/4.png";
 import img5 from "../../../assets/images/projectPage3/5.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export const ProjectPage3 = () => {
     const animationVariants = {
@@ -30,6 +31,10 @@ export const ProjectPage3 = () => {
             opacity: 1,
         },
     };
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, []);
 
     return (
         <div className={classes.ProjectPage3}>
