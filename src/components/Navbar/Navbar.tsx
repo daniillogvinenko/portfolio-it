@@ -108,7 +108,7 @@ export const Navbar = () => {
                                 className={classes.links}
                             >
                                 {navLinks.map((link, index) => (
-                                    <div key={index} className={classes.linkWrapper}>
+                                    <div onClick={toggleMenu} key={index} className={classes.linkWrapper}>
                                         <motion.div variants={linkVariants}>
                                             <NavLink className={classes.linkItem} to={link.href}>
                                                 {link.title}
