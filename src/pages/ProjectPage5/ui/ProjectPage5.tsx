@@ -8,6 +8,7 @@ import img4 from "../../../assets/images/projectPage5/4.png";
 import img5 from "../../../assets/images/projectPage5/5.png";
 import img6 from "../../../assets/images/projectPage5/6.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const ProjectPage5 = () => {
     const animationVariants = {
@@ -58,7 +59,10 @@ export const ProjectPage5 = () => {
                     whileInView="animate"
                     transition={{ delay: 0.5 }}
                 >
-                    Разработка приложения, позволяющего начинающим разработчикам искать идеи для своих проектов
+                    Разработка приложения, позволяющего начинающим разработчикам искать идеи для своих проектов{" "}
+                    <Link className={classes.appLink} target="_blank" to="https://p-projects.vercel.app/">
+                        Ссылка
+                    </Link>
                     <br />
                     <br /> Год реализации проекта - 2023
                 </motion.p>

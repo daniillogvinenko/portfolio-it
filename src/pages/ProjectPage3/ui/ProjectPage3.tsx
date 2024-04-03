@@ -7,6 +7,7 @@ import img3 from "../../../assets/images/projectPage3/3.png";
 import img4 from "../../../assets/images/projectPage3/4.png";
 import img5 from "../../../assets/images/projectPage3/5.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const ProjectPage3 = () => {
     const animationVariants = {
@@ -58,7 +59,10 @@ export const ProjectPage3 = () => {
                     whileInView="animate"
                     transition={{ delay: 0.5 }}
                 >
-                    Разработка приложения для прослушивания музыки.
+                    Приложение для прослушивания музыки.{" "}
+                    <Link className={classes.appLink} target="_blank" to="https://audio-app-frontend.vercel.app/">
+                        Ссылка
+                    </Link>
                     <br />
                     <br /> Год реализации проекта - 2023
                 </motion.p>
