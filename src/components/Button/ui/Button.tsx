@@ -8,7 +8,7 @@ export const Button = ({
 }: {
     children: ReactNode;
     className?: string;
-    onClick: MouseEventHandler<HTMLButtonElement>;
+    onClick?: MouseEventHandler<HTMLButtonElement>;
 }) => {
     return (
         <button onClick={onClick} className={classes.Button + " " + className}>
