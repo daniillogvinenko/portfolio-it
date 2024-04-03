@@ -45,33 +45,43 @@
     height: 600px;
     background: url('../../../assets/images/mainPageProjectBgs/bg1.png') fixed center/cover;
 
-
+    @media screen and (max-width: 380px) {
+        background: url('../../../assets/images/mainPageProjectBgs/bg1.png') center/cover;
+    }
 }
 
 .bg2 {
     height: 600px;
     background: url('../../../assets/images/mainPageProjectBgs/bg2.png') fixed center/cover;
 
-
+    @media screen and (max-width: 380px) {
+        background: url('../../../assets/images/mainPageProjectBgs/bg2.png') center/cover;
+    }
 }
 
 .bg3 {
     height: 600px;
     background: url('../../../assets/images/mainPageProjectBgs/bg3.png') fixed center/cover;
 
-
+    @media screen and (max-width: 380px) {
+        background: url('../../../assets/images/mainPageProjectBgs/bg3.png') center/cover;
+    }
 }
 
 .bg4 {
     height: 600px;
     background: url('../../../assets/images/mainPageProjectBgs/bg4.png') fixed center/cover;
 
-
+    @media screen and (max-width: 380px) {
+        background: url('../../../assets/images/mainPageProjectBgs/bg4.png') center/cover;
+    }
 }
 
 .bg5 {
     height: 600px;
     background: url('../../../assets/images/mainPageProjectBgs/bg5.png') fixed center/cover;
 
-
+    @media screen and (max-width: 380px) {
+        background: url('../../../assets/images/mainPageProjectBgs/bg5.png') center/cover;
+    }
 }
