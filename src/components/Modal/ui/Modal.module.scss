@@ -21,6 +21,8 @@
         font-weight: 100;
         line-height: 160%;
 
+        transition-duration: 0.3s;
+
         @media screen and (max-width: 380px) {
             width: 90vw;
             height: auto;
@@ -37,5 +39,9 @@
         p {
             margin-bottom: 10px;
         }
+    }
+
+    .modalIsClosing {
+        transform: scale(0.8);
     }
 }

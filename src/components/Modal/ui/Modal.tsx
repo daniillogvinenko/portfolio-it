@@ -5,19 +5,31 @@ import closeIcon from "../../../assets/icons/close.png";
 
 export const Modal = () => {
     const [isOpen, setisOpen] = useState(!localStorage.getItem("hasOpened"));
+    const [isClosing, setIsClosing] = useState(false);
 
     const handleClose = () => {
-        setisOpen(false);
+        setIsClosing(true);
+        setTimeout(() => {
+            setisOpen(false);
+            setIsClosing(false);
+        }, 100);
     };
 
     const handleDontShow = () => {
         localStorage.setItem("hasOpened", "been opened");
-        setisOpen(false);
+        setIsClosing(true);
+        setTimeout(() => {
+            setisOpen(false);
+            setIsClosing(false);
+        }, 100);
     };
 
     return (
         <div onClick={handleClose} style={{ display: isOpen ? "flex" : "none" }} className={classes.overlay}>
-            <div onClick={(e) => e.stopPropagation()} className={classes.modalContent}>
+            <div
+                onClick={(e) => e.stopPropagation()}
+                className={classes.modalContent + " " + (isClosing ? classes.modalIsClosing : "")}
+            >
                 <div className={classes.modalHeader}>
                     <div></div>
                     <img onClick={handleClose} src={closeIcon} alt="" />
